@@ -1,0 +1,55 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2022-01-09T10:21:26+0000",
+ "nonVisible": "true",
+ "iconName": "",
+ "methods": [{
+  "deprecated": "false",
+  "name": "TranslateText",
+  "description": "Translate text with source and target language, if you dont know source language then simply leave it blank.",
+  "params": [
+   {
+    "name": "text",
+    "type": "text"
+   },
+   {
+    "name": "sourceLang",
+    "type": "text"
+   },
+   {
+    "name": "targetLang",
+    "type": "text"
+   }
+  ]
+ }],
+ "blockProperties": [{
+  "rw": "write-only",
+  "deprecated": "false",
+  "name": "APIKey",
+  "description": "Property for APIKey",
+  "type": "text"
+ }],
+ "helpUrl": "",
+ "type": "com.preet.GoogleTranslate",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "GoogleTranslate",
+ "helpString": "A non-visible component that helps you to use Google Translate in your App.",
+ "properties": [{
+  "defaultValue": "",
+  "name": "APIKey",
+  "editorArgs": [],
+  "editorType": "string"
+ }],
+ "events": [{
+  "deprecated": "false",
+  "name": "GotTranslatedText",
+  "description": "Event raised when translation got.",
+  "params": [{
+   "name": "translatedText",
+   "type": "text"
+  }]
+ }]
+}]
